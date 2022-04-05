@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react'
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 
 import Stopwatch from './Stopwatch'
-
-import { getClass } from './stopwatch.service'
 
 import facebookURL from './img/facebook.png'
 import instagramURL from './img/instagram.png'
@@ -77,7 +76,7 @@ function ClassStopWatches() {
             flexDirection: 'row'
           }}
         >
-          <a href="https://binahki.com.br/" target="_blank">
+          <a href="https://binahki.com.br/" target="_blank" rel="noreferrer">
             <img
               src={binahkiFooterURL}
               alt="Logo Binahki"
@@ -90,19 +89,19 @@ function ClassStopWatches() {
             <p>Email: contato@binahki.com.br</p>
           </div>
           <div>
-            <a href="https://www.facebook.com/binahkioficial/" target="_blank">
+            <a href="https://www.facebook.com/binahkioficial/" target="_blank" rel="noreferrer">
               <img width={30} height={30} src={facebookURL} alt="" />
             </a>
             <a
               href="https://www.youtube.com/channel/UCukFOT0NVykIcHbwvp6nT_A"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             >
               <img width={30} height={30} src={youtubeURL} alt="" />
             </a>
-            <a href="https://www.instagram.com/binahki/" target="_blank">
+            <a href="https://www.instagram.com/binahki/" target="_blank" rel="noreferrer">
               <img width={30} height={30} src={instagramURL} alt="" />
             </a>
-            <a href="https://www.linkedin.com/company/binahki/" target="_blank">
+            <a href="https://www.linkedin.com/company/binahki/" target="_blank" rel="noreferrer">
               <img width={30} height={30} src={linkedinURL} alt="" />
             </a>
           </div>
